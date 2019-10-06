@@ -59,7 +59,7 @@ module.exports = app => {
             body,
             recipients: recipients.split(',').map(email => ({ email: email.trim() })),
             _user: req.user.id,
-            data: Date.now()
+            dateSent: Date.now()
         })
         try {
             Mailer(survey, surveyTemplate(survey));
