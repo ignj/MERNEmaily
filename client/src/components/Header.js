@@ -9,13 +9,11 @@ class Header extends Component {
             case null:
                 //loading
                 return;
-                break;
             case false:
                 //logged out
                 return (
                     <li><a href="/auth/google">Sign In With Google</a></li>
                 )
-                break;
             default:
                 //logged in
                 return [
@@ -27,7 +25,6 @@ class Header extends Component {
     }
 
     render (){
-        console.log(this.props)
         return (
             <nav>
                 <div className="nav-wrapper">
