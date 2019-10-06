@@ -8,7 +8,7 @@ const SurveyReview = ({onCancel, formValues, submitSurvey, history }) => {
 
     const reviewFields = formFields.map(({name, label}) => {
         return (
-            <div key={name}>
+            <div key={name} className="row">
                 <label>{label}</label>
                 <div>{formValues[name]}</div>
             </div>
